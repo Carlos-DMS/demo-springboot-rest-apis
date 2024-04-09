@@ -1,5 +1,6 @@
 package com.example.springboot.models;
 
+import com.example.springboot.dtos.ProductRecordDto;
 import jakarta.persistence.*;
 import org.springframework.hateoas.RepresentationModel;
 
@@ -17,6 +18,8 @@ public class ProductModel extends RepresentationModel<ProductModel> implements S
     private UUID idProduct;
     private String name;
     private BigDecimal value;
+
+    public ProductModel(){}
 
     public UUID getIdProduct() {
         return idProduct;
